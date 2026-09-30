@@ -1,0 +1,16 @@
+cat << 'EOF' > .devcontainer/devcontainer.json
+{
+  "name": "Kali Linux",
+  "image": "docker.io/kalilinux/kali-rolling:latest",
+  "features": {
+    "ghcr.io/devcontainers/features/sshd:1": {
+      "version": "latest"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": []
+    }
+  }
+}
+EOF
