@@ -1,7 +1,8 @@
- 
 {
-  "name": "Kali Linux",
-  "image": "docker.io/kalilinux/kali-rolling:latest",
+  "name": "Kali Linux Full",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
   "features": {
     "ghcr.io/devcontainers/features/sshd:1": {
       "version": "latest"
@@ -9,7 +10,10 @@
   },
   "customizations": {
     "vscode": {
-      "extensions": []
+      "extensions": [
+        "ms-azuretools.vscode-docker"
+      ]
     }
-  }
+  },
+  "remoteUser": "root"
 }
