@@ -1,4 +1,4 @@
-cat << 'EOF' > .devcontainer/devcontainer.json
+ 
 {
   "name": "Kali Linux",
   "image": "docker.io/kalilinux/kali-rolling:latest",
@@ -13,4 +13,3 @@ cat << 'EOF' > .devcontainer/devcontainer.json
     }
   }
 }
-EOF
